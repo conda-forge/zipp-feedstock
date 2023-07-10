@@ -10,14 +10,14 @@ source:
   sha256: 1876cb065531855bbe83b6c489dcf69ecc28f1068d8e95959fe8bbc77774c941
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools >=56
     - wheel
     # Add upper bound to get around circular dependency
@@ -25,7 +25,7 @@ requirements:
     - setuptools_scm >=3.4.1,<7
     - toml
   run:
-    - python >=3.7
+    - python >=3.8
 
 test:
   source_files:
