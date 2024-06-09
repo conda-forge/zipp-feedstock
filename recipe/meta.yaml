@@ -1,5 +1,5 @@
 {% set name = "zipp" %}
-{% set version = "3.18.0" %}
+{% set version = "3.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df8d042b02765029a09b157efd8e820451045890acc30f8e37dd2f94a060221f
+  sha256: 2884ed22e7d8961de1c9a05142eb69a247f120291bc0206a00a7642f09b5b715
 
 build:
   number: 0
