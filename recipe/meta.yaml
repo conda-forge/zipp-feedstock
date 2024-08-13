@@ -1,5 +1,5 @@
 {% set name = "zipp" %}
-{% set version = "3.19.2" %}
+{% set version = "3.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf1dcf6450f873a13e952a29504887c89e6de7506209e5b1bcc3460135d4de19
+  sha256: 0145e43d89664cfe1a2e533adc75adafed82fe2da404b4bbb6b026c0157bdb31
 
 build:
   number: 0
@@ -36,7 +36,6 @@ test:
     - importlib_metadata
     - jaraco.itertools
     - jaraco.test
-    - func_timeout
     - jaraco.functools
     - more-itertools
   imports:
