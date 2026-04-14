@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: zipp
-  version: 3.23.0
+  version: "3.23.1"
 
 package:
   name: ${{ name }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: a07157588a12518c9d4034df3fbbee09c814741a33ff63c05fa29d26a2404166
+  sha256: 32120e378d32cd9714ad503c1d024619063ec28aad2248dc6672ad13edfa5110
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
