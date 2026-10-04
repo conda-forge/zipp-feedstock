@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: zipp
-  version: "4.1.0"
+  version: "4.1.1"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4cb57381f544315db7688e976e922a2b18cdb513d21cc194eb42232ba2a3e602
+  sha256: 7ebb7a44c021b29fd8dbd7cce6812d0d7b5b454521f93cc71af6ccd155aaa70b
 
 build:
   number: 0
